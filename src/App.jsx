@@ -83,6 +83,8 @@ const features = [
   },
 ];
 
+const heroImage = `${import.meta.env.BASE_URL}kiss-tell-hero.png`;
+
 function scrollToId(id) {
   document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 }
@@ -139,7 +141,7 @@ function App() {
 
         <div className="hero-visual" aria-label="Kiss & Tell app concept preview">
           <img
-            src="/kiss-tell-hero.png"
+            src={heroImage}
             alt="A phone showing a lipstick scan concept beside lipstick tubes and shade cards"
           />
           <div className="scan-card">
